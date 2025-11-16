@@ -1,0 +1,7 @@
+<svg width="100%" height="70" viewBox="0 0 1200 70" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="70" fill="#0f172a"/>
+  <text x="600" y="44" text-anchor="middle"
+        font-size="20" fill="#38bdf8" font-family="sans-serif">
+    In Data We Trust — Built with Statistics, ML &amp; Curiosity
+  </text>
+</svg>
