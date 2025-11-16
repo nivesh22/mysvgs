@@ -1,19 +1,8 @@
 <svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nivesh Elangovanraaj - Data Scientist &amp; ML Engineer">
   <defs>
-    <!-- Animated background gradient -->
     <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#020617">
-        <animate attributeName="stop-color"
-                 values="#020617;#020617;#0b1120;#020617"
-                 dur="10s"
-                 repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#0f172a">
-        <animate attributeName="stop-color"
-                 values="#0f172a;#1e293b;#0f172a"
-                 dur="10s"
-                 repeatCount="indefinite"/>
-      </stop>
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0f172a"/>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
@@ -23,14 +12,8 @@
       <stop offset="100%" stop-color="#eab308"/>
     </linearGradient>
 
-    <!-- Glow that pulses -->
     <radialGradient id="glow" cx="80%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8">
-        <animate attributeName="stop-opacity"
-                 values="0.4;0.9;0.4"
-                 dur="6s"
-                 repeatCount="indefinite"/>
-      </stop>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
       <stop offset="50%" stop-color="#a855f7" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
     </radialGradient>
@@ -42,49 +25,49 @@
   <!-- Glow orb -->
   <circle cx="980" cy="40" r="260" fill="url(#glow)" />
 
-  <!-- Accent bar: slight horizontal “breathe” -->
-  <rect x="60" y="55" width="360" height="4" rx="2" fill="url(#accentGradient)">
-    <animate attributeName="x"
-             values="60;70;60"
-             dur="5s"
-             repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Name -->
+  <!-- NAME -->
   <text x="60" y="110"
-        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-family="system-ui, sans-serif"
         font-size="34"
         fill="#e5e7eb"
         font-weight="700">
     Nivesh Elangovanraaj
   </text>
 
+  <!-- Accent bar BELOW name -->
+  <rect
+    x="60"
+    y="125"
+    width="360"
+    height="4"
+    rx="2"
+    fill="url(#accentGradient)"
+  />
+
   <!-- Title -->
-  <text x="60" y="145"
-        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  <text x="60" y="160"
+        font-family="system-ui, sans-serif"
         font-size="20"
         fill="#9ca3af">
     Data Scientist · ML Engineer · Statistical Modeling
   </text>
 
   <!-- Subtitle -->
-  <text x="60" y="178"
-        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+  <text x="60" y="185"
+        font-family="system-ui, sans-serif"
         font-size="15"
         fill="#6b7280">
     Finance · Healthcare · E-commerce · End-to-End ML Pipelines · NLP &amp; LLMs
   </text>
 
-  <!-- Right-side "data" motif -->
+  <!-- Right card motif -->
   <g transform="translate(760,60)">
     <rect x="0" y="0" width="340" height="150" rx="18"
           fill="rgba(15,23,42,0.9)" stroke="#38bdf8" stroke-width="1.2" />
 
-    <!-- Mini chart axes -->
     <line x1="30" y1="120" x2="300" y2="120" stroke="#1f2937" stroke-width="1" />
     <line x1="30" y1="40" x2="30" y2="120" stroke="#1f2937" stroke-width="1" />
 
-    <!-- Chart polyline with “draw” animation -->
     <polyline
       points="30,110 75,95 120,85 165,70 210,78 255,60 300,50"
       fill="none"
@@ -92,15 +75,8 @@
       stroke-width="2.5"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-dasharray="260"
-      stroke-dashoffset="260">
-      <animate attributeName="stroke-dashoffset"
-               values="260;0;260"
-               dur="8s"
-               repeatCount="indefinite"/>
-    </polyline>
+    />
 
-    <!-- Dots -->
     <circle cx="30" cy="110" r="3.5" fill="#38bdf8"/>
     <circle cx="75" cy="95" r="3.5" fill="#38bdf8"/>
     <circle cx="120" cy="85" r="3.5" fill="#22c55e"/>
@@ -109,16 +85,15 @@
     <circle cx="255" cy="60" r="3.5" fill="#22c55e"/>
     <circle cx="300" cy="50" r="3.5" fill="#eab308"/>
 
-    <!-- Labels -->
     <text x="30" y="32"
-          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          font-family="system-ui, sans-serif"
           font-size="12"
           fill="#9ca3af">
       Liquidity · CX · Clinical Outcomes
     </text>
 
     <text x="30" y="140"
-          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          font-family="system-ui, sans-serif"
           font-size="11"
           fill="#6b7280">
       End-to-end ML · Forecasting · NLP · CI/CD
