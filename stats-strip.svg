@@ -1,0 +1,15 @@
+<svg width="560" height="82" viewBox="0 0 560 82" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="82" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Publications -->
+  <text x="40" y="32" fill="#38bdf8" font-size="14" font-family="sans-serif">Publications</text>
+  <text x="40" y="58" fill="#e2e8f0" font-size="20" font-family="sans-serif" font-weight="700">6+</text>
+
+  <!-- Citations -->
+  <text x="230" y="32" fill="#22c55e" font-size="14" font-family="sans-serif">Citations</text>
+  <text x="230" y="58" fill="#e2e8f0" font-size="20" font-family="sans-serif" font-weight="700">45+</text>
+
+  <!-- Models deployed -->
+  <text x="410" y="32" fill="#eab308" font-size="14" font-family="sans-serif">Models</text>
+  <text x="410" y="58" fill="#e2e8f0" font-size="20" font-family="sans-serif" font-weight="700">12</text>
+</svg>
