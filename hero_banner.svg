@@ -1,8 +1,19 @@
 <svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nivesh Elangovanraaj - Data Scientist &amp; ML Engineer">
   <defs>
+    <!-- Animated background gradient -->
     <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#020617"/>
-      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="0%" stop-color="#020617">
+        <animate attributeName="stop-color"
+                 values="#020617;#020617;#0b1120;#020617"
+                 dur="10s"
+                 repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#0f172a">
+        <animate attributeName="stop-color"
+                 values="#0f172a;#1e293b;#0f172a"
+                 dur="10s"
+                 repeatCount="indefinite"/>
+      </stop>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
@@ -12,8 +23,14 @@
       <stop offset="100%" stop-color="#eab308"/>
     </linearGradient>
 
+    <!-- Glow that pulses -->
     <radialGradient id="glow" cx="80%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8">
+        <animate attributeName="stop-opacity"
+                 values="0.4;0.9;0.4"
+                 dur="6s"
+                 repeatCount="indefinite"/>
+      </stop>
       <stop offset="50%" stop-color="#a855f7" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
     </radialGradient>
@@ -25,8 +42,13 @@
   <!-- Glow orb -->
   <circle cx="980" cy="40" r="260" fill="url(#glow)" />
 
-  <!-- Accent bar -->
-  <rect x="60" y="55" width="360" height="4" rx="2" fill="url(#accentGradient)" />
+  <!-- Accent bar: slight horizontal “breathe” -->
+  <rect x="60" y="55" width="360" height="4" rx="2" fill="url(#accentGradient)">
+    <animate attributeName="x"
+             values="60;70;60"
+             dur="5s"
+             repeatCount="indefinite"/>
+  </rect>
 
   <!-- Name -->
   <text x="60" y="110"
@@ -62,7 +84,7 @@
     <line x1="30" y1="120" x2="300" y2="120" stroke="#1f2937" stroke-width="1" />
     <line x1="30" y1="40" x2="30" y2="120" stroke="#1f2937" stroke-width="1" />
 
-    <!-- Chart polyline -->
+    <!-- Chart polyline with “draw” animation -->
     <polyline
       points="30,110 75,95 120,85 165,70 210,78 255,60 300,50"
       fill="none"
@@ -70,7 +92,13 @@
       stroke-width="2.5"
       stroke-linecap="round"
       stroke-linejoin="round"
-    />
+      stroke-dasharray="260"
+      stroke-dashoffset="260">
+      <animate attributeName="stroke-dashoffset"
+               values="260;0;260"
+               dur="8s"
+               repeatCount="indefinite"/>
+    </polyline>
 
     <!-- Dots -->
     <circle cx="30" cy="110" r="3.5" fill="#38bdf8"/>
